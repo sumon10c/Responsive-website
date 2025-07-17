@@ -145,8 +145,12 @@
     .teams {
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container, .fact-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
     }
     .team-features{
         margin-left: 20px;
@@ -157,6 +161,10 @@
 @media screen and (min-width: 576px) and (max-width:992px) {
     .teams{
         flex-direction: column;
+    }
+    .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 0;
     }
     .team-features{
         margin: 50px auto;
